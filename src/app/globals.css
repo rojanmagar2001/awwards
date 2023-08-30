@@ -25,5 +25,9 @@ body {
   .project-gallery-project p {
     transition: all 0.4s;
   }
+
+  .project-modal-slider {
+    transition: top 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+  }
 }
 
