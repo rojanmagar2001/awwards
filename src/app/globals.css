@@ -29,5 +29,23 @@ body {
   .project-modal-slider {
     transition: top 0.5s cubic-bezier(0.76, 0, 0.24, 1);
   }
+
+  .header-burger::before, .header-burger::after {
+    content: "";
+    display: block;
+    width: 40%;
+    background-color: white;
+    height: 1px;
+    margin: auto;
+    position: relative;
+    transition: transform 0.3s;
+  }
+
+  .header-burger::after {
+    top: -5px;
+  }
+  .header-burger::before {
+    top: 5px;
+  }
 }
 
