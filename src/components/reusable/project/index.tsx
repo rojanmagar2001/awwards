@@ -14,7 +14,7 @@ interface ProjectProps {
 const Project: React.FC<ProjectProps> = ({ index, title, setModal }) => {
   return (
     <div
-      className="project-gallery-project flex w-full justify-between items-center px-[50px] py-[100px] border-t-[rgb(201,201,201)] border-t-[1px] border-solid cursor-pointer hover:opacity-[0.5]"
+      className="project-gallery-project flex w-full justify-between items-center px-[50px] py-[80px] border-t-[rgb(201,201,201)] border-t-[1px] border-solid cursor-pointer hover:opacity-[0.5]"
       onMouseEnter={() => {
         setModal({ active: true, index: index });
       }}

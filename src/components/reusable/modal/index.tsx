@@ -71,8 +71,6 @@ const Modal: React.FC<ModalProps> = ({ modal, projects }) => {
       moveCursorY(clientY);
       moverCursorLabelX(clientX);
       moveCursorLabelY(clientY);
-    
-    
     };
     window.addEventListener("mousemove", handleMouseMove);
 
@@ -82,12 +80,12 @@ const Modal: React.FC<ModalProps> = ({ modal, projects }) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  useEffect(() => {
-    if (active) {
-    }
+  // useEffect(() => {
+  //   if (!active) {
+  //   }
 
-    return () => {};
-  });
+  //   return () => {};
+  // });
   return (
     <>
       <motion.div

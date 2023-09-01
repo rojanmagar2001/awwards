@@ -7,8 +7,8 @@ import Modal from "@/components/reusable/modal";
 const ProjectGallery: React.FC = () => {
   const [modal, setModal] = useState({ active: false, index: 0 });
   return (
-    <section className="project-gallery relative flex items-center justify-center">
-      <div className="flex w-full flex-col items-center justify-center">
+    <section className="project-gallery py-32 px-48 flex items-center justify-center">
+      <div className="relative flex w-full flex-col items-center justify-center">
         {projects.map((project, index) => {
           return (
             <Project
@@ -19,8 +19,8 @@ const ProjectGallery: React.FC = () => {
             />
           );
         })}
+        <Modal modal={modal} projects={projects} />
       </div>
-      <Modal modal={modal} projects={projects} />
     </section>
   );
 };
